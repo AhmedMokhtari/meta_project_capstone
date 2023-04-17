@@ -1,0 +1,33 @@
+.highlights{
+    margin-top: 15px;
+    padding: 20px;
+}
+.high_btn{
+    border-radius: 9px;
+    background-color:#F4CE14;
+    color: black;
+    width: 150px;
+    padding: 10px 25px;
+}
+.card {
+    margin-top: 10px;
+    height: 100%;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-title {
+    margin-bottom: auto;
+  } 
+  .card-img-top {
+    height: 300px;
+    object-fit: cover;
+  }
+  .high_order:hover{
+    color: white;
+    background-color:#F4CE14;
+
+  }
