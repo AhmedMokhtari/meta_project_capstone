@@ -1,0 +1,446 @@
+:root {
+  --shadow-2: rgb(0 17 51 / 7%) 0px 3px 15px;
+  --shadow-3: 0 0.3rem 1.8rem 0 rgb(22 39 86 / 40%);
+  --light-shadow: 0 0.1rem 1.5rem 0 rgb(255 255 255 / 50%);
+  --radius: 5px;
+  --karla-font: 'Karla', sans-serif !important;
+  --markazi-font: 'Markazi Text', serif !important;
+  --green: #495E57;
+  --yellow: #F4CE14;
+  --brown: #EE9972;
+  --creem: #FBDABB;
+  --light: #EDEFEE;
+  --dark: #333333;
+  --transition: all .7s !important;
+  --border-radius-img: 15px !important;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url(assets/fonts/Karla-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Markazi Text';
+  src: url(assets/fonts/MarkaziText-Medium.ttf);
+}
+
+* {
+  transition: var(--transition) !important;
+}
+
+h2,
+h3 {
+  font-family: var(--markazi-font) !important;
+
+}
+
+.hero-image,
+.reserve-image,
+.specials-image,
+.specials-card-img-top,
+.menu-img {
+  box-shadow: var(--shadow-3) !important;
+}
+
+.reservations-card,
+.menu-img,
+.menu-img-2 {
+  box-shadow: var(--light-shadow);
+}
+
+.app {
+  font-family: var(--karla-font);
+}
+
+.header-nav {
+  position: relative;
+  background-color: var(--light);
+  box-shadow: var(--shadow-2);
+  z-index: 9999;
+}
+
+.nav-link {
+  color: var(--dark) !important;
+}
+
+.nav-link:hover {
+  color: var(--brown) !important;
+}
+
+@media screen and (max-width: 990px) {
+
+  .navbar-nav,
+  .nav-item {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .nav-item {
+    border: 2px solid var(--green) !important;
+    border-radius: 5px;
+    width: 20rem !important;
+    margin: 0.5rem 0 0 0 !important;
+    cursor: pointer;
+
+  }
+
+  .nav-item:hover {
+    background-color: var(--green);
+  }
+
+  .nav-item:hover .nav-link {
+    color: var(--light) !important;
+  }
+
+  .nav-item:last-child {
+    margin-left: 0 !important;
+    border: none !important
+  }
+
+  .login-btn {
+    width: 20rem;
+  }
+}
+
+
+/* Login */
+
+.login-btn {
+  border: 2px solid var(--green) !important;
+  color: var(--dark) !important;
+
+}
+
+.login-btn:hover {
+  background-color: var(--green) !important;
+  border: 2px solid var(--green) !important;
+  color: var(--light) !important;
+}
+
+
+.login-card {
+  width: 61rem !important;
+  height: 80vh !important;
+}
+
+.login-card-img {
+  height: 80vh !important;
+}
+
+.login-img {
+  width: 78% !important;
+}
+
+
+/* Hero Section */
+
+.hero {
+  background-color: var(--green);
+  padding: 1.6rem;
+}
+
+.hero h2 {
+  color: var(--yellow);
+}
+
+.hero p {
+  width: 18rem;
+}
+
+.reserve-btn {
+  background-color: var(--yellow) !important;
+  padding: 10px 20px !important;
+
+}
+
+.reserve-btn:hover {
+  background-color: var(--creem) !important;
+  color: var(--dark) !important;
+}
+
+.hero-image {
+  width: 260px;
+  height: 20rem;
+  border-radius: var(--border-radius-img) !important;
+  position: absolute;
+  margin: 1rem 0 0 0;
+}
+
+
+@media screen and (max-width: 767px) {
+  .hero-image {
+    width: 215px;
+    height: 15rem;
+    margin: 4rem 0 0 3.4rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    margin: 26px 0 0 0 !important;
+  }
+}
+
+
+/* Reservation Section */
+
+.overlay {
+  background-color: #000000b6;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+.reservations {
+  background-image: url('assets/images/restaurant.jpg') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 100vh !important;
+  width: 100% !important;
+}
+
+.reservations-card {
+  width: 27% !important;
+  border-radius: var(--border-radius-img) !important;
+  box-shadow: var(--light-shadow);
+  transform: scale(90%);
+}
+
+.reserve-image {
+  width: 100% !important;
+  border-radius: 10px !important;
+}
+
+.confirm-btn {
+  background-color: var(--yellow) !important;
+  color: var(--dark) !important;
+
+}
+
+.confirm-btn:hover {
+  background-color: var(--green) !important;
+  color: var(--light) !important;
+}
+
+@media screen and (max-width: 1480px) {
+  .reservations-card {
+    width: 42% !important;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .reservations-card {
+    width: 46% !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .reservations-card {
+    width: 54% !important;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .reservations-card {
+    width: 67% !important;
+  }
+
+  .reserve-image {
+    height: 19rem !important;
+  }
+}
+
+@media screen and (max-width: 680px) and (min-width: 480px) {
+  .reservations-card {
+    width: 77% !important;
+  }
+
+  .reserve-image {
+    height: 16rem !important;
+  }
+}
+
+
+/* Specials */
+
+.specials-container {
+  width: 100% !important;
+  margin: 10rem 0 0 0 !important;
+  color: var(--dark) !important;
+}
+
+.specials-card {
+  box-shadow: var(--shadow-2);
+  border-radius: 10px !important;
+  border: none !important;
+  height: 37rem !important;
+
+  margin-bottom: 3rem !important;
+}
+
+.last-card {
+  margin: 0 0 17rem 0 !important;
+}
+
+.phone-last-card {
+  margin: 0 0 27rem 0 !important;
+}
+
+.specials-card:hover {
+  transform: scale(1.05);
+}
+
+.online-menu-btn {
+  background-color: var(--yellow) !important;
+  padding: 10px 20px !important;
+
+}
+
+.online-menu-btn:hover {
+  background-color: var(--green) !important;
+  color: var(--light) !important;
+}
+
+.specials-image {
+  width: 100%;
+}
+
+.online-menu-btn,
+.order-btn {
+  background-color: var(--yellow) !important;
+  padding: 10px 20px !important;
+
+}
+
+.online-menu-btn {
+  padding: 10px 20px !important;
+}
+
+.order-btn {
+  bottom: 1rem !important;
+  position: absolute !important;
+}
+
+.order-btn:hover,
+.online-menu-btn:hover {
+  background-color: var(--green) !important;
+  color: var(--light) !important;
+}
+
+.top-image {
+  width: 100% !important;
+  padding: 0.7rem !important;
+}
+
+.specials-card-img-top {
+  width: 100% !important;
+  border-radius: 10px !important;
+  height: 17rem !important;
+  border-bottom-left-radius: var(--border-radius-img) !important;
+  border-bottom-right-radius: var(--border-radius-img) !important;
+}
+
+.specials-price {
+  color: var(--brown);
+}
+
+.specials-title {
+  color: var(--green);
+}
+
+.specials-desc {
+  overflow: hidden !important;
+  position: absolute !important;
+  width: 95% !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .specials-card-img-top {
+    height: 28rem !important;
+  }
+
+  .specials-card {
+    height: 45rem !important;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .specials-card-img-top {
+    height: 23rem !important;
+  }
+
+  .specials-card {
+    height: 40rem !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .specials-card-img-top {
+    height: 18rem !important;
+  }
+
+  .specials-card {
+    height: 36rem !important;
+  }
+}
+
+/* Menu */
+
+.menu-container {
+  height: 100vh !important;
+  background-image: url('assets/images/restaurant-chef-B.jpg') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  width: 100% !important;
+}
+
+.menu-img {
+  transform: scale(85%) !important;
+  margin: -3rem 0 0 0 !important;
+}
+
+.menu-img-2 {
+  transform: scale(75%) !important;
+  margin: -3rem 0 0 0 !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .menu-img {
+    transform: scale(95%) !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .menu-img {
+    transform: scale(115%) !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-img-2 {
+    transform: scale(95%) !important;
+  }
+}
+
+
+/* Footer */
+
+footer {
+  background-color: var(--green) !important;
+}
+
+.footer-logo {
+  height: 9rem !important;
+  border-radius: 5px !important;
+}

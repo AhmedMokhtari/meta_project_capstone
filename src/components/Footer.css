@@ -1,0 +1,43 @@
+.footer {
+    margin-top: 15px;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .footer h3 {
+    color: #fff;
+  }
+  
+  .footer p {
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: #fff;
+  }
+  
+  .footer a:hover {
+    color: #f4a261;
+  }
+  
+  .footer-bottom {
+    background-color: #344b46;
+    padding: 20px 0;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  .footer-bottom p.text-center {
+    color: #fff;
+  }
+  .fooot_btn{
+    padding: 8px;
+    margin: 8px;
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+  

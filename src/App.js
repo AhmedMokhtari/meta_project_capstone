@@ -1,17 +1,12 @@
 import './App.css';
-import Footer from './component/Footer/Footer';
-import Hero from './component/Hero/Hero';
-import Highlights from './component/Highlights/Highlights';
-import MyNavbar from './component/Navbar/Navbar';
-
+import Routing from './Routing';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-        <MyNavbar></MyNavbar>
-        <Hero></Hero>
-        <Highlights></Highlights>
-        <Footer></Footer>
+    <div className='app'>
+      <Routing />
+      <Footer />
     </div>
   );
 }
